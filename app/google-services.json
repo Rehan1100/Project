@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280984876755",
+    "project_id": "slick-tick",
+    "storage_bucket": "slick-tick.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280984876755:android:3028406b399730af950626",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280984876755-rnf6pcoqpq6d2hid5b04absltr2i1qp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAss5CNEwxwxonYuRg-5RutSPHOyhGnxsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280984876755-rnf6pcoqpq6d2hid5b04absltr2i1qp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

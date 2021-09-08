@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="48dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right" >
+
+    <!-- Menu Item Image -->
+
+    <!-- Badge Count -->
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/actionbar_notifcation_textview"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:fontFamily="@font/baloo_bhai"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="17dp"
+        android:textAlignment="center"
+        android:background="@drawable/iconround"
+        android:paddingTop="2dp"
+        android:textColor="@color/background"
+        android:textStyle="bold" />
+
+</RelativeLayout>

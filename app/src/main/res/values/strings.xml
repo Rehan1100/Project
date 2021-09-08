@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="OpenDrawer">Open</string>
+    <string name="CloseDrawer">Close</string>
+    <string name="StudentOpenDrawer">Open</string>
+    <string name="StudentCloseDrawer">Close</string>
+
+</resources>

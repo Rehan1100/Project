@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".teacherPanel.EditPost.editAssignmentQuiz">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Date"
+        android:textColor="@color/Silver"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".post.PostCreation">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/pdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gallery"
+                    tools:layout_editor_absoluteX="6dp"
+                    tools:layout_editor_absoluteY="16dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginTop="73dp"
+                    android:background="@color/background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:id="@+id/edittitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="6dp"
+                android:drawableLeft="@drawable/name"
+                android:gravity="center"
+                android:hint=" Name"
+                android:maxLines="1"
+                android:paddingLeft="6dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/buttonbackground"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toTopOf="@+id/editDesc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <EditText
+                android:id="@+id/editDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="6dp"
+                android:drawableLeft="@drawable/desc"
+                android:gravity="center"
+                android:hint="Discription"
+                android:maxLines="1"
+                android:paddingLeft="6dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/buttonbackground"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toTopOf="@+id/editdate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edittitle" />
+
+
+            <Button
+                android:id="@+id/Post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/buttoncorner"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="Edit and Save"
+                android:textColor="@color/background"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/buttonbackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catrory2" />
+
+            <Spinner
+                android:id="@+id/course2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="@color/background"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+                app:layout_constraintBottom_toTopOf="@+id/catrory2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editdate" />
+
+            <Spinner
+                android:id="@+id/catrory2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="@color/background"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+                app:layout_constraintBottom_toTopOf="@+id/Post"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/course2" />
+
+            <EditText
+                android:id="@+id/editdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="6dp"
+                android:drawableLeft="@drawable/schadule"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/background"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/course2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editDesc" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginBottom="12dp"
+                android:background="@color/background"
+                app:layout_constraintBottom_toTopOf="@+id/edittitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product"
+                app:layout_constraintVertical_bias="0.53" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
